@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/img_new"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_new"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đọc Báo"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/img_music"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_music"
+                />
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nghe Nhạc"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_account"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/img_accnout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_acount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tài Khoản"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NGUYEN THANH NAM - PH28279"
+        android:textStyle="italic"
+        android:textSize="2dp"
+        />
+</LinearLayout>
